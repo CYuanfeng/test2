@@ -1,0 +1,187 @@
+﻿<Application x:Class="Restaurant_system.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="Login.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <SolidColorBrush x:Key="TileButtonPressedOverlayBrush" Color="#32000000"/>
+
+
+            <!---<Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal">
+                                            <Storyboard>
+                                                <ThicknessAnimation Duration="00:00:00.15" To="5" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="transparentBorder" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="MouseOver">
+                                            <Storyboard>
+                                                <ThicknessAnimation Duration="00:00:00.15" To="0" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="transparentBorder" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Pressed">
+                                            <Storyboard>
+                                                <ThicknessAnimation Duration="00:00:00.15" To="10" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="transparentBorder" />
+
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled">
+                                            <Storyboard>
+                                                <DoubleAnimation Duration="0" To=".55" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="DisabledVisualElement" />
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Border BorderThickness="5" BorderBrush="Transparent"
+    							x:Name="transparentBorder">
+                                    <Viewbox  Stretch="UniformToFill">
+                                        <Border BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}">
+                                            <Grid Background="{TemplateBinding Background}" Height="{TemplateBinding ActualHeight}" Width="{TemplateBinding ActualWidth}" >
+                                                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+    											ContentTemplate="{TemplateBinding ContentTemplate}" 
+    											Content="{TemplateBinding Content}" />
+                                                <Rectangle x:Name="DisabledVisualElement" Fill="White" IsHitTestVisible="false" Opacity="0" RadiusY="3" RadiusX="3" />
+                                                <Rectangle x:Name="FocusVisualElement" IsHitTestVisible="false" Margin="1" Opacity="0" Stroke="White" StrokeThickness="2" />
+                                                <Rectangle x:Name="PressedVisualElement" IsHitTestVisible="false" Opacity="0" Fill="{StaticResource TileButtonPressedOverlayBrush}" />
+                                            </Grid>
+                                        </Border>
+                                    </Viewbox>
+                                </Border>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>-->
+            <Style TargetType="{x:Type Button}" x:Key="itemButton">
+               
+                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="BorderBrush" Value="{x:Null}" />
+                <Setter Property="Background" Value="#00000000"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal">
+                                            <Storyboard>
+                                                <ThicknessAnimation Duration="00:00:00.15" To="5" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="transparentBorder" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="MouseOver">
+                                            <Storyboard>
+                                                <ThicknessAnimation Duration="00:00:00.15" To="0" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="transparentBorder" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Pressed">
+                                            <Storyboard>
+                                                <ThicknessAnimation Duration="00:00:00.15" To="10" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="transparentBorder" />
+
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled">
+                                            <Storyboard>
+                                                <DoubleAnimation Duration="0" To=".55" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="DisabledVisualElement" />
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Border BorderThickness="5" BorderBrush="Transparent"
+    							x:Name="transparentBorder">
+                                    <Viewbox  Stretch="UniformToFill">
+                                        <Border BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}">
+                                            <Grid Background="{TemplateBinding Background}" Height="{TemplateBinding ActualHeight}" Width="{TemplateBinding ActualWidth}" >
+                                                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+    											ContentTemplate="{TemplateBinding ContentTemplate}" 
+    											Content="{TemplateBinding Content}" />
+                                                <Rectangle x:Name="DisabledVisualElement" Fill="White" IsHitTestVisible="false" Opacity="0" RadiusY="3" RadiusX="3" />
+                                                <Rectangle x:Name="FocusVisualElement" IsHitTestVisible="false" Margin="1" Opacity="0" Stroke="White" StrokeThickness="2" />
+                                                <Rectangle x:Name="PressedVisualElement" IsHitTestVisible="false" Opacity="0" Fill="{StaticResource TileButtonPressedOverlayBrush}" />
+                                            </Grid>
+                                        </Border>
+                                    </Viewbox>
+                                </Border>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="TileButton" TargetType="{x:Type Button}">
+                <Setter Property="Height" Value="220" />
+                <Setter Property="Width" Value="220" />
+                <Setter Property="FontFamily" Value="Segoe UI" />
+                <Setter Property="FontWeight" Value="Normal" />
+                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="BorderBrush" Value="{x:Null}" />
+                <Setter Property="Background" Value="#00000000"/>
+
+
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal">
+                                            <Storyboard>
+                                                <ThicknessAnimation Duration="00:00:00.15" To="5" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="transparentBorder" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="MouseOver">
+                                            <Storyboard>
+                                                <ThicknessAnimation Duration="00:00:00.15" To="0" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="transparentBorder" />
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Pressed">
+                                            <Storyboard>
+                                                <ThicknessAnimation Duration="00:00:00.15" To="10" Storyboard.TargetProperty="BorderThickness" Storyboard.TargetName="transparentBorder" />
+
+                                            </Storyboard>
+                                        </VisualState>
+                                        <VisualState x:Name="Disabled">
+                                            <Storyboard>
+                                                <DoubleAnimation Duration="0" To=".55" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="DisabledVisualElement" />
+                                            </Storyboard>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Border BorderThickness="5" BorderBrush="Transparent"
+    							x:Name="transparentBorder">
+                                    <Viewbox  Stretch="UniformToFill">
+                                        <Border BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}">
+                                            <Grid Background="{TemplateBinding Background}" Height="{TemplateBinding ActualHeight}" Width="{TemplateBinding ActualWidth}" >
+                                                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+    											ContentTemplate="{TemplateBinding ContentTemplate}" 
+    											Content="{TemplateBinding Content}" />
+                                                <Rectangle x:Name="DisabledVisualElement" Fill="White" IsHitTestVisible="false" Opacity="0" RadiusY="3" RadiusX="3" />
+                                                <Rectangle x:Name="FocusVisualElement" IsHitTestVisible="false" Margin="1" Opacity="0" Stroke="White" StrokeThickness="2" />
+                                                <Rectangle x:Name="PressedVisualElement" IsHitTestVisible="false" Opacity="0" Fill="{StaticResource TileButtonPressedOverlayBrush}" />
+                                            </Grid>
+                                        </Border>
+                                    </Viewbox>
+                                </Border>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+        
+    </Application.Resources>
+    
+</Application>

@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Restaurant_system.OrderDetailItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Background="#63B8FF"
+             
+             d:DesignHeight="235" d:DesignWidth="691">
+    <Grid>
+        <Label Content="Label" HorizontalContentAlignment="Center" FontSize="30" HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="265"/>
+        <Label Content="x" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="270,6,0,0" VerticalAlignment="Top"/>
+        <Label Content="2" FontSize="30" HorizontalAlignment="Left" Margin="375,6,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.6,0.16"/>
+        <Button Content="1" BorderBrush="#63B8FF" FontSize="15" Foreground="White" Background="#63B8FF" HorizontalAlignment="Left" Margin="266,59,0,0" VerticalAlignment="Top" Width="81" Height="40"/>
+        <CheckBox Content="打包" FontSize="25" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="加辣" FontSize="25" HorizontalAlignment="Left" Margin="152,87,0,0" VerticalAlignment="Top"/>
+        <Button Background="White"  BorderBrush="White" HorizontalAlignment="Left" Margin="552,158,0,0" VerticalAlignment="Top" Width="72" Height="62"/>
+        <Button Background="#63B8FF" BorderBrush="#63B8FF" HorizontalAlignment="Left" Margin="631,6,0,0" VerticalAlignment="Top" Width="50" Height="37">
+            <Image Source=".\Images\cls.png"></Image>
+        </Button>
+        <Button Content="重置" Foreground="White" Background="#63B8FF"  BorderBrush="#63B8FF" FontSize="36" HorizontalAlignment="Left" Margin="528,100,0,0" VerticalAlignment="Top" Width="153" Height="125"/>
+        <Button Content="2" BorderBrush="#63B8FF" FontSize="15" Foreground="White" Background="#63B8FF" HorizontalAlignment="Left" Margin="347,59,0,0" VerticalAlignment="Top" Width="81" Height="40"/>
+        <Button Content="3" BorderBrush="#63B8FF" FontSize="15" Foreground="White" Background="#63B8FF" HorizontalAlignment="Left" Margin="428,59,0,0" VerticalAlignment="Top" Width="81" Height="40"/>
+        <Button Content="4" BorderBrush="#63B8FF" FontSize="15" Foreground="White" Background="#63B8FF" HorizontalAlignment="Left" Margin="266,99,0,0" VerticalAlignment="Top" Width="81" Height="40"/>
+        <Button Content="5" BorderBrush="#63B8FF" FontSize="15" Foreground="White" Background="#63B8FF" HorizontalAlignment="Left" Margin="347,99,0,0" VerticalAlignment="Top" Width="81" Height="40"/>
+        <Button Content="6" BorderBrush="#63B8FF" FontSize="15" Foreground="White" Background="#63B8FF" HorizontalAlignment="Left" Margin="428,99,0,0" VerticalAlignment="Top" Width="81" Height="40"/>
+        <Button Content="7" BorderBrush="#63B8FF" FontSize="15" Foreground="White" Background="#63B8FF" HorizontalAlignment="Left" Margin="266,140,0,0" VerticalAlignment="Top" Width="81" Height="40"/>
+        <Button Content="8" BorderBrush="#63B8FF" FontSize="15" Foreground="White" Background="#63B8FF" HorizontalAlignment="Left" Margin="347,140,0,0" VerticalAlignment="Top" Width="81" Height="40"/>
+        <Button Content="9" BorderBrush="#63B8FF" FontSize="15" Foreground="White" Background="#63B8FF" HorizontalAlignment="Left" Margin="428,140,0,0" VerticalAlignment="Top" Width="81" Height="40"/>
+        <Button Content="0" BorderBrush="#63B8FF" FontSize="15" Foreground="White" Background="#63B8FF" HorizontalAlignment="Left" Margin="347,180,0,0" VerticalAlignment="Top" Width="81" Height="40"/>
+
+    </Grid>
+</UserControl>

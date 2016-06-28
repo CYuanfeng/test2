@@ -1,0 +1,4 @@
+F:\Project\Restaurant_system\YuanCommon\bin\Debug\YuanCommon.dll
+F:\Project\Restaurant_system\YuanCommon\bin\Debug\YuanCommon.pdb
+F:\Project\Restaurant_system\YuanCommon\obj\Debug\YuanCommon.dll
+F:\Project\Restaurant_system\YuanCommon\obj\Debug\YuanCommon.pdb

@@ -1,0 +1,57 @@
+﻿<controls:MetroWindow x:Class="Restaurant_system.MainWindow"
+        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="968" Width="1360" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Grid.Row="0" Content="Rest" Grid.ColumnSpan="2" FontSize="65" Margin="30,0,0,0"></Label>
+        <ScrollViewer x:Name="topScroll"
+                      Margin="0,0,10,0"
+                             VerticalScrollBarVisibility="Disabled"
+                             HorizontalScrollBarVisibility="Auto"
+                             Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" >
+            <StackPanel Name="catePanel" Background="Coral" Orientation="Horizontal"></StackPanel>
+        </ScrollViewer>
+        <ScrollViewer x:Name="contentScroll"
+                      Margin="10,10,10,0"
+                             VerticalScrollBarVisibility="Auto"
+                             HorizontalScrollBarVisibility="Disabled"
+                             Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2">
+            <StackPanel Name="foodPanel" Background="BlueViolet" Orientation="Vertical"></StackPanel>
+        </ScrollViewer>
+        <ScrollViewer x:Name="rightContentScroll"
+                      Margin="0,10,0,0"
+                             VerticalScrollBarVisibility="Auto"
+                             HorizontalScrollBarVisibility="Disabled"
+                             Grid.Row="2" Grid.Column="3" >
+            <StackPanel Name="orderDetailPanel" Background="Gray" Orientation="Vertical">
+               
+            </StackPanel>
+        </ScrollViewer>
+        <ScrollViewer x:Name="rightTopScroll"
+                      Margin="0,0,10,0"
+                             VerticalScrollBarVisibility="Disabled"
+                             HorizontalScrollBarVisibility="Auto"
+                             Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" >
+            <StackPanel Name="orderAddPanel" Background="GreenYellow" Orientation="Horizontal"></StackPanel>
+        </ScrollViewer>
+        <StackPanel Background="Beige" Grid.Column="3" HorizontalAlignment="Left" Height="195" Margin="0,5,0,0" Grid.Row="3" VerticalAlignment="Top" Width="752" Orientation="Horizontal">
+            <StackPanel Width="355" Name="settlementPanel" Background="Brown"/>
+            <StackPanel Width="397" Name="PrintPanel" Background="Olive"/>
+        </StackPanel>
+
+    </Grid>
+</controls:MetroWindow>
