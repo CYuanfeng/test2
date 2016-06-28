@@ -75,6 +75,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="AdminItem\normalItem.cs" />
     <Compile Include="AdminItem\topItemButton.cs" />
     <Compile Include="AdminMain.xaml.cs">
       <DependentUpon>AdminMain.xaml</DependentUpon>

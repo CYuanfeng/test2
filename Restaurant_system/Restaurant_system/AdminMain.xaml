@@ -7,11 +7,22 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="450"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+
         <StackPanel Name="topPanel" Grid.Row="0" Grid.Column="0"  Orientation="Horizontal"></StackPanel>
+        <StackPanel Name="staplePanel" Grid.Row="1" Grid.Column="0"  Orientation="Horizontal"></StackPanel>
+        <Label Name="vegeTitle" Content="菜式:" FontSize="55" HorizontalAlignment="Left" Margin="22,10,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+        <Label Name="meatTitle" Content="肉类:" FontSize="55" HorizontalAlignment="Left" Margin="73,10,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1"/>
+        <StackPanel Name="vagePanel" Grid.Row="3" Grid.Column="0"  Orientation="Vertical" ></StackPanel>
+        <StackPanel Name="meatPanel" Grid.Row="3" Grid.Column="1"  Orientation="Vertical"></StackPanel>
+        <StackPanel Name="foodPanel" Grid.Row="3" Grid.Column="2"  Orientation="Vertical"></StackPanel>
+
     </Grid>
 </controls:MetroWindow>
